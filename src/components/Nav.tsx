@@ -3,7 +3,7 @@ import styled from "styled-components"
 
 const Nav: React.FC = () => {
     return (
-        <div className="flex justify-end items-end w-11/12 m-auto">
+        <div className="flex justify-end items-end w-10/12 md:w-11/12 m-auto pt-7">
             <NavButton>Projects</NavButton>
             <NavButton>Contact</NavButton>
         </div>
@@ -18,14 +18,15 @@ const NavButton: React.FC = ({ children }) => {
             rgba(255, 255, 255, 0.15) 98.6%,
             rgba(255, 255, 255, 0.15) 98.6%
         );
-        border: 1px solid rgba(255, 255, 255, 0.25);
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        backdrop-filter: blur(20px);
 
         &:focus {
             outline: none;
         }
     `
     return (
-        <Button className="md:text-md lg:text-lg md:py-1 md:px-6 text-sm font-heading font-semibold py-1 px-4 rounded-sm mt-5 md:ml-8 ml-5">
+        <Button className="lg:text-lg md:px-6 lg:px-7 lg:ml-12 text-md font-heading font-semibold py-1 px-4 rounded-sm md:ml-8 ml-6">
             {children}
         </Button>
     )
