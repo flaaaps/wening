@@ -1,8 +1,8 @@
 import React from "react"
-import Landing from "./Landing"
+import Home from "./Home"
 
 const App: React.FC = () => {
-    return <Landing />
+    return <Home />
 }
 
 export default App
