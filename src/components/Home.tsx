@@ -3,6 +3,7 @@ import styled from "styled-components"
 
 import Nav from "./Nav"
 import Hero from "./sections/Hero"
+import Projects from "./sections/Projects"
 
 interface Props {}
 
@@ -13,10 +14,13 @@ const LandingWrapper = styled.div`
 
 const Landing: React.FC<Props> = () => {
     return (
-        <LandingWrapper style={{ paddingBottom: "25vh" }} className="pb-0">
-            <Nav />
-            <Hero />
-        </LandingWrapper>
+        <>
+            <LandingWrapper style={{ paddingBottom: "25vh" }} className="pb-0">
+                <Nav />
+                <Hero />
+            </LandingWrapper>
+            <Projects />
+        </>
     )
 }
 
