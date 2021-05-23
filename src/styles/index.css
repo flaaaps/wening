@@ -16,3 +16,10 @@ body {
     width: 100%;
     height: 100%;
 }
+
+.projects-clip-path {
+    background: white;
+    height: 200px;
+    clip-path: polygon(100% 100%, -50% 100%, 100% 70%);
+    margin-top: -199px;
+}
