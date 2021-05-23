@@ -15,7 +15,7 @@ const LandingWrapper = styled.div`
 const Landing: React.FC<Props> = () => {
     return (
         <>
-            <LandingWrapper style={{ paddingBottom: "25vh" }} className="pb-0">
+            <LandingWrapper style={{ paddingBottom: "20vh" }} className="pb-0">
                 <Nav />
                 <Hero />
             </LandingWrapper>
