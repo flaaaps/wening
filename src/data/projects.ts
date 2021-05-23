@@ -1,14 +1,19 @@
 export interface Project {
     id: number
     tags: string[]
-    title: string
+    title: ProjectTitle
     description: string
     description_de: string
     previewImg: string
     links: ProjectLink[]
 }
 
-interface ProjectLink {
+type ProjectTitle = {
+    color: string
+    content: string
+}
+
+type ProjectLink = {
     type: "twitter" | "github" | "website"
     iconUrl: string
     url: string
@@ -17,7 +22,10 @@ interface ProjectLink {
 export const data: Project[] = [
     {
         id: 0,
-        title: "Dragonfly",
+        title: {
+            color: "#F98452",
+            content: "Dragonfly",
+        },
         description:
             "is a minecraft client which provides useful features and tremendous animations. The website not only includes the overview page, but also a store, a dashboard and an ideas platform.",
         description_de:
@@ -39,7 +47,7 @@ export const data: Project[] = [
     },
     {
         id: 1,
-        title: "Findrrz",
+        title: { color: "#4D7EDC", content: "Findrrz" },
         description: "is a tool to find new music based on your favorite artists!",
         description_de: "ist ein Tool um neue Musik basierend auf deinen Lieblingskünstlern zu finden!",
         links: [
@@ -48,8 +56,13 @@ export const data: Project[] = [
                 type: "github",
                 url: "https://github.com/flaaaps/findrrz",
             },
+            {
+                iconUrl: "https://content.wening.me/personal/icons/external-link.svg",
+                type: "website",
+                url: "https://findrrz.hardboun.de/",
+            },
         ],
         previewImg: "https://content.wening.me/personal/findrrz_preview.png",
-        tags: ["React", "Tailwind", "JavaScript"],
+        tags: ["React", "Tailwind", "TypeScript"],
     },
 ]
