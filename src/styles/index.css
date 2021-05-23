@@ -23,3 +23,37 @@ body {
     clip-path: polygon(100% 100%, -50% 100%, 100% 70%);
     margin-top: -199px;
 }
+
+.pj-overlay {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.38) 100%);
+}
+
+.tag-color-html {
+    background: rgba(236, 113, 79, 0.45);
+    color: #fb9d88;
+}
+
+.tag-color-css {
+    background: rgba(113, 139, 199, 0.45);
+    color: #5494f5;
+}
+
+.tag-color-javascript {
+    background: rgba(251, 242, 176, 0.45);
+    color: #f7df1d;
+}
+
+.tag-color-typescript {
+    background: rgb(68, 118, 192);
+    color: white;
+}
+
+.tag-color-tailwind {
+    background-color: rgba(82, 179, 208, 0.5);
+    color: white;
+}
+
+.tag-color-react {
+    background: rgba(33, 35, 41, 0.5);
+    color: rgb(128, 212, 243);
+}
