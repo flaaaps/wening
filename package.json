@@ -24,7 +24,7 @@
         "start": "craco start",
         "build": "craco build",
         "test": "craco test",
-        "publish": "npx @flaaaps/easyupload",
+        "deploy": "yarn build && npx @flaaaps/easyupload",
         "eject": "react-scripts eject"
     },
     "eslintConfig": {
