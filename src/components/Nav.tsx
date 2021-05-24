@@ -27,7 +27,7 @@ const NavButton: React.FC<{ href: string }> = ({ children, href }) => {
         }
     `
     return (
-        <AnchorLink href={href}>
+        <AnchorLink offset={100} href={href}>
             <Button className="lg:text-lg md:px-6 lg:px-7 lg:ml-12 text-md font-heading font-semibold py-1 px-4 rounded-sm md:ml-8 ml-6">
                 {children}
             </Button>
