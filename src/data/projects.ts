@@ -26,8 +26,7 @@ export const data: Project[] = [
             color: "#F98452",
             content: "Dragonfly",
         },
-        description:
-            "is a minecraft client which provides useful features and tremendous animations. The website not only includes the overview page, but also a store, a dashboard and an ideas platform.",
+        description: "is a minecraft client which provides useful features and tremendous animations.",
         description_de:
             "ist ein Minecraft-Client, der nützliche Funktionen und cleane Animationen bietet. Die Website enthält nicht nur die Übersichtsseite, sondern auch einen Online Shop, ein Dashboard und eine Ideenplattform.",
         links: [
@@ -48,8 +47,8 @@ export const data: Project[] = [
     {
         id: 1,
         title: { color: "#4D7EDC", content: "Findrrz" },
-        description: "is a tool to find new music based on your favorite artists!",
-        description_de: "ist ein Tool um neue Musik basierend auf deinen Lieblingskünstlern zu finden!",
+        description: "helps you find new music based on your favorite artists!",
+        description_de: "hilft dir neue Musik basierend auf deinen Lieblingskünstlern zu finden!",
         links: [
             {
                 iconUrl: "https://content.wening.me/personal/icons/github.svg",
