@@ -27,7 +27,7 @@ const Project: React.FC<Props> = ({ project }) => {
     const [isFocused, setFocused] = useState(false)
     return (
         <motion.div
-            className="w-full shadow-2xl my-12 md:mx-6 md:my-5 relative overflow-hidden"
+            className="w-full shadow-xl my-12 md:mx-6 md:my-5 relative overflow-hidden focus:outline-none"
             whileHover="hover"
             onHoverStart={() => !isMobile && setFocused(true)}
             onHoverEnd={() => !isMobile && setFocused(false)}
@@ -61,7 +61,7 @@ const Project: React.FC<Props> = ({ project }) => {
                     </div>
                     <div className="pj-text-content">
                         <h1
-                            className="text-xl md:text-2xl lg:text-3xl font-bold font-heading"
+                            className="text-2xl lg:text-3xl font-bold font-heading"
                             style={{ color: project.title.color }}
                         >
                             {project.title.content}
