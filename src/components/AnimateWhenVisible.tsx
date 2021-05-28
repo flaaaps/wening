@@ -1,13 +1,14 @@
 import React, { useEffect } from "react"
 import { useInView } from "react-intersection-observer"
-import { motion, useAnimation, Variants } from "framer-motion"
+import { motion, TargetAndTransition, useAnimation, VariantLabels, Variants } from "framer-motion"
 
 type Props = {
     variants: Variants
     className?: string
+    whileHover?: TargetAndTransition | VariantLabels
 }
 
-const AnimateWhenVisible: React.FC<Props> = ({ children, variants, className }) => {
+const AnimateWhenVisible: React.FC<Props> = ({ children, variants, className, whileHover }) => {
     const controls = useAnimation()
     const [ref, inView] = useInView()
 
@@ -25,6 +26,7 @@ const AnimateWhenVisible: React.FC<Props> = ({ children, variants, className }) 
             transition={{ duration: 0.5 }}
             variants={{ ...variants }}
             className={className}
+            whileHover={whileHover}
         >
             {children}
         </motion.div>
