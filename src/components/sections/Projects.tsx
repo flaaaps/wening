@@ -16,7 +16,7 @@ const Projects: React.FC = () => {
                     hidden: { x: -200 },
                 }}
                 className="mt-12"
-                whileHover={{ x: 0 }}
+                whileHover={{ x: 0, transition: { duration: 0.15 } }}
             >
                 <img src={hello} className="lg:w-36 sm:w-24 w-0 absolute" alt="Peace" />
             </AnimateWhenVisible>
