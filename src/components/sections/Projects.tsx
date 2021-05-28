@@ -15,6 +15,7 @@ const Projects: React.FC = () => {
                     visible: { x: -50, transition: { type: "spring", bounce: 0.3, delay: 1 } },
                     hidden: { x: -200 },
                 }}
+                className="mt-12"
                 whileHover={{ x: 0 }}
             >
                 <img src={hello} className="lg:w-36 sm:w-24 w-0 absolute" alt="Peace" />
