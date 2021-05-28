@@ -30,7 +30,7 @@ const Project: React.FC<Props> = ({ project }) => {
         <AnimateWhenVisible
             className="w-full shadow-xl my-12 md:mx-6 md:my-5 relative overflow-hidden focus:outline-none"
             variants={{
-                visible: { opacity: 1, y: 0, transition: { delay: 0.25 * project.id } },
+                visible: { opacity: 1, y: 0, transition: { delay: 0.15 * project.id } },
                 hidden: { opacity: 0, y: 100 },
             }}
         >
