@@ -12,9 +12,10 @@ const Projects: React.FC = () => {
             <div className="projects-clip-path mb-4"></div>
             <AnimateWhenVisible
                 variants={{
-                    visible: { opacity: 1 },
-                    hidden: { opacity: 0 },
+                    visible: { x: -50, transition: { type: "spring", bounce: 0.3, delay: 1 } },
+                    hidden: { x: -200 },
                 }}
+                whileHover={{ x: 0 }}
             >
                 <img src={hello} className="lg:w-36 sm:w-24 w-0 absolute" alt="Peace" />
             </AnimateWhenVisible>
