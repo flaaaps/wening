@@ -28,7 +28,7 @@ const Project: React.FC<Props> = ({ project }) => {
     const [isFocused, setFocused] = useState(false)
     return (
         <AnimateWhenVisible
-            className="w-full shadow-xl my-12 md:mx-6 md:my-5 relative overflow-hidden focus:outline-none"
+            className="pj-item w-full shadow-xl my-12 md:mx-6 md:my-5 relative overflow-hidden focus:outline-none"
             variants={{
                 visible: { opacity: 1, y: 0, transition: { delay: 0.15 * project.id } },
                 hidden: { opacity: 0, y: 100 },
@@ -77,7 +77,7 @@ const Project: React.FC<Props> = ({ project }) => {
                         <p className="mt-1 text-white font-body tracking-tighter font-normal text-base lg:text-lg leading-5">
                             {project.description}
                         </p>
-                        <div className="pj-link-wrapper mt-4 md:mt-8">
+                        <div className="pj-link-wrapper mt-4 md:mt-5">
                             {project.links.map(link => (
                                 <span key={link.type} className="mr-4">
                                     <a href={link.url} target="_blank" rel="noreferrer">
