@@ -58,3 +58,8 @@ html {
     background: rgba(33, 35, 41, 0.5);
     color: rgb(128, 212, 243);
 }
+
+.tag-color-express {
+    color: rgb(37, 34, 34);
+    background-color: rgba(255, 255, 255, 0.952);
+}
