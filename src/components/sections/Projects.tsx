@@ -23,7 +23,7 @@ const Projects: React.FC = () => {
 
             <div
                 id="projects"
-                className="projects-content pb-72 mt-12 w-11/12 sm:w-1/2 lg:w-3/4 lg:flex lg:justify-between xl:w-4/6 mx-auto box-border"
+                className="projects-content pb-72 mt-12 w-11/12 sm:w-1/2 lg:w-5/6 flex-wrap lg:grid grid-cols-2 gap-x-9 xl:w-4/6 mx-auto box-border"
             >
                 {projectsData.map(project => (
                     <Project project={project} key={project.id} />
