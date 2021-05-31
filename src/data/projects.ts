@@ -64,4 +64,22 @@ export const data: Project[] = [
         previewImg: "https://content.wening.me/personal/findrrz_preview.png",
         tags: ["React", "Tailwind", "TypeScript"],
     },
+    {
+        id: 2,
+        title: {
+            color: "",
+            content: "Rock, paper, scissors!",
+        },
+        description: "lets you get competitive with your friends in one of the most classiest games.",
+        description_de: "",
+        links: [
+            {
+                iconUrl: "https://content.wening.me/personal/icons/github.svg",
+                type: "github",
+                url: "https://github.com/flaaaps/rps",
+            },
+        ],
+        previewImg: "https://content.wening.me/personal/rps_background.png",
+        tags: ["JavaScript", "HTML", "Express", "CSS"],
+    },
 ]
