@@ -28,7 +28,7 @@ const Project: React.FC<Props> = ({ project }) => {
     const [isFocused, setFocused] = useState(false)
     return (
         <AnimateWhenVisible
-            className="pj-item w-full shadow-xl my-12 md:mx-6 md:my-5 relative overflow-hidden focus:outline-none"
+            className="pj-item w-full shadow-xl max-w-md xl:max-w-xl my-10 md:mx-6 md:my-5 relative overflow-hidden focus:outline-none"
             variants={{
                 visible: { opacity: 1, y: 0, transition: { delay: 0.15 * project.id } },
                 hidden: { opacity: 0, y: 100 },
