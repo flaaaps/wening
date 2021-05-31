@@ -67,7 +67,7 @@ export const data: Project[] = [
     {
         id: 2,
         title: {
-            color: "",
+            color: "#f2a93b",
             content: "Rock, paper, scissors!",
         },
         description: "lets you get competitive with your friends in one of the most classiest games.",
